@@ -1,0 +1,22 @@
+{
+  "name": "colibrilabs/price",
+  "description": "Price Manager Library",
+  "keywords": ["php price", "price", "pricing"],
+  "authors": [
+    {
+      "name": "Ivan Hontarenko",
+      "email": "stewie.dev@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": "~7.0",
+    "colibrilabs/collection": "~0.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Colibri\\Pricing\\": "src/"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "dcba7511912ba0170bf476ad41a4da28",
+    "content-hash": "3cb4218763086b442c6fc2db9bd6c0ed",
+    "packages": [
+        {
+            "name": "colibrilabs/collection",
+            "version": "0.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colibrilabs/collection.git",
+                "reference": "85d61b52f9070da694d264b03a565a17b4347e0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colibrilabs/collection/zipball/85d61b52f9070da694d264b03a565a17b4347e0b",
+                "reference": "85d61b52f9070da694d264b03a565a17b4347e0b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Colibri\\Collection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Hontarenko",
+                    "email": "stewie.dev@gmail.com"
+                }
+            ],
+            "description": "Collection Library",
+            "keywords": [
+                "collection",
+                "php collection"
+            ],
+            "time": "2017-06-21 15:36:43"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "~7.0"
+    },
+    "platform-dev": []
+}
