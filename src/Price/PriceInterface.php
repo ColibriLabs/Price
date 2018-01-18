@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=true);
 
 namespace Colibri\Pricing\Price;
 

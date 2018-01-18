@@ -6,4 +6,3 @@
 - Item Unit
 - Modifiers
 - Formulas
-- Calculators

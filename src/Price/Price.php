@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=true);
 
 namespace Colibri\Pricing\Price;
 
@@ -15,6 +15,11 @@ class Price implements PriceInterface
    * @var float
    */
   protected $value;
+  
+  /**
+   * @var integer
+   */
+  protected $precision;
   
   /**
    * @var CurrencyInterface
@@ -42,6 +47,24 @@ class Price implements PriceInterface
   /**
    * @inheritDoc
    */
+  public function setPrecision(integer $precision): PriceInterface
+  {
+    $this->precision = $precision;
+    
+    return $this;
+  }
+  
+  /**
+   * @inheritDoc
+   */
+  public function getPrecision(): integer
+  {
+    return $this->precision;
+  }
+  
+  /**
+   * @inheritDoc
+   */
   public function getCurrency():? CurrencyInterface
   {
     return $this->currency;
@@ -55,6 +78,14 @@ class Price implements PriceInterface
     $this->currency = $currency;
   
     return $this;
+  }
+  
+  /**
+   * @inheritDoc
+   */
+  public function toPrint()
+  {
+    return sprintf('%s %s', $this->getValue(), $this->getCurrency()->toPrint());
   }
   
 }
