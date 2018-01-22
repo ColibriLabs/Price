@@ -26,6 +26,12 @@ class Price implements PriceInterface
    */
   protected $currency;
   
+  public function __construct(float $price, CurrencyInterface $currency)
+  {
+    $this->value = $price;
+    $this->currency = $currency;
+  }
+  
   /**
    * @inheritDoc
    */
